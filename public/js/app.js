@@ -42655,7 +42655,9 @@ var staticRenderFns = [
     return _c("div", { staticClass: "center-align" }, [
       _c(
         "a",
-        { staticClass: "col s10 offset-s1 waves-effect waves-light btn" },
+        {
+          staticClass: "col s10 offset-s1 waves-effect waves-light btn btn-one"
+        },
         [_vm._v("button")]
       )
     ])

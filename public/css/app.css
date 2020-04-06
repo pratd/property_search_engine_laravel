@@ -9169,3 +9169,8 @@ input[type=range]::-ms-thumb {
   }
 }
 
+.page-footer,
+.btn-one {
+  background-color: #476a5e;
+}
+

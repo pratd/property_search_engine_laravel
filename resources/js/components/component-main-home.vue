@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="center-align">
-            <a class="col s10 offset-s1 waves-effect waves-light btn">button</a>
+            <a class="col s10 offset-s1 waves-effect waves-light btn btn-one">button</a>
         </div>
     </div>
 </template>
