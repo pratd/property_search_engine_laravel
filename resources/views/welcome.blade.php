@@ -13,8 +13,9 @@
         <!-- Styles -->
     </head>
     <body>
-        @include('includes.header')
-        <div id="app" class="flex-center position-ref full-height">
+    @include('includes.header')
+        <div class="row center">
+            <img src="/img/restHome.png">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -28,12 +29,14 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="row content">
-                <component-main-home></component-main-home>
+            <div class="row center">
+                <img src="/img/smallIcon.png">
+                <p>Find the perfect place</p>
             </div>
         </div>
-
+    <div id="app" class="row center">
+        <component-main-home></component-main-home>
+    </div>
     <script src="{{mix('js/app.js')}}"></script>
     </body>
 </html>

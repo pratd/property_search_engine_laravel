@@ -9,4 +9,4 @@
         </ul>
     </div>
 </nav>
-<img src="/img/restHome.png">
+
