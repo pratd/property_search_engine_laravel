@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Client\Response;
 
 class FrontController extends Controller
 {
@@ -15,9 +16,17 @@ class FrontController extends Controller
     public function index()
     {
         //
-        $R=Http::get('https://my-json-server.typicode.com/diegosilva91/fakeapi/db');
-//        dd($R);
-        return $R;
+        $R = Http::get('https://my-json-server.typicode.com/diegosilva91/fakeapi/db');
+//        var_dump(json_decode($R));
+        $response=$R->json();
+//        dd($response);
+//        $keys = array_keys((array)json_decode($R));
+//        dd($keys);
+//        $data=array(
+//            'R'=>$R,
+//            'keys'=>$keys);
+//        dd($data);
+        return view('welcome',compact('response'));
     }
 
     /**

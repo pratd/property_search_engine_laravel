@@ -1966,11 +1966,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['some'],
   mounted: function mounted() {
     console.log('Component mounted.');
+    console.dir(this.some);
   }
 });
 $(document).ready(function () {
@@ -42603,53 +42603,61 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "col s12" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "input-field col s10 offset-s1" }, [
+        _c(
+          "select",
+          [
+            _c("option", { attrs: { value: "", disabled: "", selected: "" } }, [
+              _vm._v("-")
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.some, function(somes, index) {
+              return _c("option", [_vm._v(_vm._s(index))])
+            })
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _c("label", [_vm._v("Select kind")])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _vm._m(1)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col s12" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "input-field col s10 offset-s1" }, [
-          _c("select", [
-            _c("option", { attrs: { value: "", disabled: "", selected: "" } }, [
-              _vm._v("-")
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("Option 1")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("Option 2")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("Option 3")])
-          ]),
-          _vm._v(" "),
-          _c("label", [_vm._v("Select kind")])
-        ]),
+    return _c("div", { staticClass: "input-field col s10 offset-s1" }, [
+      _c("select", [
+        _c("option", { attrs: { value: "", disabled: "", selected: "" } }),
         _vm._v(" "),
-        _c("div", { staticClass: "input-field col s10 offset-s1" }, [
-          _c("select", [
-            _c("option", { attrs: { value: "", disabled: "", selected: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("Option 1")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("Option 2")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("Option 3")])
-          ]),
-          _vm._v(" "),
-          _c("label", [_vm._v("Type city,town,etc.")])
-        ])
+        _c("option", { attrs: { value: "1" } }, [_vm._v("Option 1")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "2" } }, [_vm._v("Option 2")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "3" } }, [_vm._v("Option 3")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "center-align" }, [
-        _c(
-          "a",
-          { staticClass: "col s10 offset-s1 waves-effect waves-light btn" },
-          [_vm._v("button")]
-        )
-      ])
+      _c("label", [_vm._v("Type city,town,etc.")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "center-align" }, [
+      _c(
+        "a",
+        { staticClass: "col s10 offset-s1 waves-effect waves-light btn" },
+        [_vm._v("button")]
+      )
     ])
   }
 ]

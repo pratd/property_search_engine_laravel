@@ -35,7 +35,7 @@
             </div>
         </div>
     <div id="app" class="row center">
-        <component-main-home></component-main-home>
+        <component-main-home :some='@json($response)'></component-main-home>
     </div>
     <script src="{{mix('js/app.js')}}"></script>
     </body>
