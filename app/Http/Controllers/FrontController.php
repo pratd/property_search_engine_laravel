@@ -26,7 +26,7 @@ class FrontController extends Controller
 //            'R'=>$R,
 //            'keys'=>$keys);
 //        dd($data);
-        return view('welcome',compact('response'));
+        return view('pages.home',compact('response'));
     }
 
     /**
