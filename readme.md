@@ -1,4 +1,4 @@
-# Project: Property search engine - Assembler School
+# Project: Property search engine 
 
 Deployed version of this project is hosted at Heroku:
 * **Node API -> NOT DEPLOYED YET**
